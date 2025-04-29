@@ -1,6 +1,6 @@
-import json
-import pandas as pd
+import logging
+import os
+import functions_framework
+from flask import jsonify, make_response, request
 
-def gen_transaction_data(request):
-    print('This is a cool function.. We have to write more code later')
-    return 200
+print('Imports were succesfull!')
