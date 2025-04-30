@@ -32,8 +32,7 @@ def stock_purchase_order(request):
     
     # 1 Run data validations
     try:
-        stock_data_validation(data)
-        print(stock_data_validation(data))
+        stock_data_validation(data)       
     except:
         logger.error('Data validation step not passed, please review input')
         return make_response(jsonify({"error": "Invalid JSON"}), 400)
