@@ -24,7 +24,6 @@ def stock_purchase_order(request):
         return make_response(jsonify({"error": "Use POST"}), 405)
     
     data = request.get_json(silent=True)
-    data = request
     
     if not data:
         logger.error('No JSON format')
