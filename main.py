@@ -44,16 +44,3 @@ def stock_purchase_order(request):
     # 3 Simluate data load to a Data base
     simulate_db_save(data)
     return make_response(jsonify(transofmed_data), 200)
-
-
-
-# request_test = {'symbol':'APPL',
-#                 'price':245.56,
-#                 'position':{'Long': True, 'Short': False},
-#                 'broker': 'Robin Hood',
-#                 'purchase_country':'USA'
-#                 }
-
-# request_test = json.dumps(request_test)
-# print(request_test, type(request_test))
-# stock_purchase_order(request_test)
