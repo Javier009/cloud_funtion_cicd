@@ -54,5 +54,5 @@ def data_transformation(data: Dict[str,Any]) -> Dict[str,Any]:
 
 
 def simulate_db_save(data: Dict[str, Any]) -> bool:
-    logger.info("Simulating DB save for order %s", data["order_id"])
+    logger.info("Simulating DB save for order %s", data["processing_id"])
     return True    

@@ -43,7 +43,6 @@ def stock_purchase_order(request):
     transofmed_data['message'] = 'Data processed correcly, thanks for choosing us'
     # 3 Simluate data load to a Data base
     simulate_db_save(data)
-
     return make_response(jsonify(transofmed_data), 200)
 
 
