@@ -43,6 +43,7 @@ def stock_data_validation(data: Dict[str,Any]):
     if not isinstance(purchase_country, str) or purchase_country == '':
         raise ValueError('Not correct symbol format provided')
     
+    logger.info('Data validation passed')
     return True
 
 def data_transformation(data: Dict[str,Any]) -> Dict[str,Any]:
